@@ -1,60 +1,88 @@
-# Sistema de Gestión para Servicios Legales - Justicia & Asociados
+# Sistema de Gestión para Servicios Legales — Justicia & Asociados
 
 ## Descripción
 
-Sistema de gestión desarrollado en Python para la organización de información relacionada con servicios legales de la firma **Justicia & Asociados**.
+Sistema de gestión desarrollado en Python para administrar información relacionada con una firma de servicios legales.
 
-El proyecto cuenta con una interfaz gráfica desarrollada con Tkinter y está organizado mediante módulos y funciones.
+El proyecto cuenta con una interfaz gráfica desarrollada con Tkinter y conexión a una base de datos MySQL.
 
 ## Tecnologías utilizadas
 
-- Python
-- Tkinter
-- Programación Orientada a Objetos
-- Visual Studio Code
+* Python
+* Tkinter
+* MySQL
+* mysql.connector
+* Pillow
+* Tkcalendar
+* OpenPyXL
+* ReportLab
 
-## Módulos del sistema
+## Módulos
 
-El sistema está dividido en cuatro módulos principales:
+El proyecto está organizado en diferentes módulos:
 
-1. **Clientes**
-   - Registro de información de los clientes.
-   - Datos personales y de contacto.
-
-2. **Abogados y Casos**
-   - Información de los abogados.
-   - Información relacionada con los casos jurídicos.
-
-3. **Procesal y Documentos**
-   - Actuaciones procesales.
-   - Documentos legales.
-
-4. **Agenda y Facturación**
-   - Audiencias y citas.
-   - Información de facturación.
+* `main.py`
+* `clientes.py`
+* `abogados_casos.py`
+* `procesal_documentos.py`
+* `agenda_facturacion.py`
+* `conexion.py`
 
 ## Funcionalidades
 
-- Interfaz gráfica con Tkinter.
-- Navegación mediante pestañas.
-- Formularios para ingresar información.
-- Botones para limpiar los formularios.
-- Organización del código mediante módulos.
-- Uso de funciones.
-- Uso de programación orientada a objetos.
+El sistema incluye:
+
+* Gestión de clientes.
+* Gestión de abogados y casos.
+* Gestión procesal y documentos.
+* Agenda y facturación.
+* Operaciones CRUD.
+* Conexión con MySQL.
+* Procedimientos almacenados.
+* Validación de datos.
+* Selección de fechas mediante calendario.
+* Gestión de imágenes.
+* Exportación a Excel.
+* Exportación a PDF.
+* Filtros.
+* Tema claro y oscuro.
+* Favicon e iconografía.
+
+## Base de datos
+
+El sistema utiliza la base de datos MySQL:
+
+`TextilPro`
+
+La conexión se realiza mediante el archivo:
+
+`conexion.py`
 
 ## Instalación
 
-### Requisitos
-
-Tener instalado Python 3.
-
-### Ejecución
-
-1. Descargar o clonar el proyecto.
-2. Abrir la carpeta `lawfirm` en Visual Studio Code.
-3. Abrir la terminal.
-4. Ejecutar:
+1. Instalar Python.
+2. Instalar las dependencias necesarias.
+3. Configurar MySQL.
+4. Crear o restaurar la base de datos `TextilPro`.
+5. Verificar los datos de conexión en `conexion.py`.
+6. Ejecutar:
 
 ```bash
 python main.py
+```
+
+## Dependencias
+
+Las principales librerías utilizadas son:
+
+```bash
+pip install mysql-connector-python
+pip install openpyxl
+pip install reportlab
+pip install tkcalendar
+pip install Pillow
+```
+
+## Autores
+
+Proyecto académico — Justicia & Asociados.
